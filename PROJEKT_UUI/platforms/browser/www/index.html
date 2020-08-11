@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <link href="css/MainStyle.css" type="text/css" rel="stylesheet" />
+        <script type="text/javascript" src="js/main.js"></script>
+
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>LoginPT</title>
+    </head>
+    <body>
+        <div id="loginBTN">
+            <img id="slika" src="img/lock.png">
+        </div>
+        <div id="container">
+            <h1>Log In</h1>
+            <span class="x-btn">
+                <img src="https://cdn4.iconfinder.com/data/icons/miu/22/circle_close_delete_-128.png">
+            </span>
+            <form>
+                <input type="username" id="username" placeholder="Username" >
+                <input type="password" id="pass" placeholder="Password" >
+                <button id="LIB" class="bt">Log in</button>
+                <div id="remember-container">
+                    <span id="forgotten">Register</span>
+                </div>
+            </form>
+        </div>
+
+        <div id="forgotten-container">
+            <h1>Register</h1>
+           <span class="x-btn">
+             <img src="https://cdn4.iconfinder.com/data/icons/miu/22/circle_close_delete_-128.png"></img>
+           </span>
+         
+           <form>
+            <input type="username" id="Rusername" placeholder="Username" >
+            <input type="password" id="Rpass" placeholder="Password" >
+             <button id="REG" class="bt">Register</button>
+         </form>
+         </div>
+    </body>
+</html>

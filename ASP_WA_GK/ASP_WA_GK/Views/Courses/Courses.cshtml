@@ -1,0 +1,108 @@
+﻿@{
+    ViewBag.Title = "Courses";
+    Layout = "_Layout";
+}
+<h2>Kolegiji</h2>
+<table>
+    <thead id="table-head"></thead>
+    <tbody id="table-body"></tbody>
+</table>
+
+<br /><br />
+
+      <form id="unos">
+          <label>ID kolegija: </label>
+          <input type="text" id="id" value="11"/>
+          <br />
+          <label>ISVU kolegija: </label>
+          <input type="text" id="isvu" value="11"/>
+          <br />
+          <label>Ime kolegija: </label>
+          <input type="text" id="ime" value="aaa"/>
+          <br />
+          <label>Kratko ime kolegija: </label>
+          <input type="text" id="krime" value="aaa"/>
+          <br />
+          <label>Razina kolegija: </label>
+          <input type="text" id="razina" value="aaa"/>
+          <br />
+          <label>ECTS kolegija: </label>
+          <input type="text" id="ects" value="12"/>
+          <br />
+          <label>Odjel: </label>
+          <input type="text" id="odjel" value="aaa"/>
+          <br />
+          <input id="savebtn" type="button" value="save" onclick="save()" />
+      </form>
+
+<script type="text/javascript">
+    'use strict';
+
+    function appendTableHead(single) {
+
+        let header = domHelper.createTableHeader(single);
+        let thead = document.getElementById('table-head');
+        thead.appendChild(header);
+    }
+
+    function appendToTable(data){
+
+        let rows = data.map(x => domHelper.createTableRow(x));
+        let tableBody = document.getElementById('table-body');
+
+        appendTableHead(data[0]);
+
+        for(let row of rows){
+            tableBody.appendChild(row);
+        }
+    }
+
+    function save() {
+        var id = document.getElementById("id").value;
+        var isvu = document.getElementById("isvu").value;
+        var ime = document.getElementById("ime").value;
+        var krime = document.getElementById("krime").value;
+        var razina = document.getElementById("razina").value;
+        var ects = document.getElementById("ects").value;
+        var odjel = document.getElementById("odjel").value;
+        var obj = new Object();
+        obj = {
+            "ID": id,
+            "ISVU": isvu,
+            "name": ime,
+            "sname": krime,
+            "level": razina,
+            "ECTS": ects,
+            "department": odjel
+        };
+        var str = "Ala brate!"
+
+        //var xhttp = new XMLHttpRequest();
+        //xhttp.onreadystatechange = function () {
+        //    if (this.readyState == 4 && this.status == 200) {
+        //        console.log("Poslano!");
+        //    }
+        //};
+        //xhttp.open("POST", "/api/courses", true);
+        //xhttp.send(str);
+
+        //axios({
+        //    method: "post",
+        //    url: "/api/courses",
+        //    data: "aaa!",
+        //    header: { "Content-type": "text/plain", "Accept":"text/plain" }
+        //}).then(data => console.log(data));
+
+        //$.ajax({
+        //    type: "POST",
+        //    url: "/api/courses",
+        //    dataType: "json",
+        //    contentType: "application/json; charset=utf-8",
+        //    data: JSON.stringify(obj),
+        //    success: function (result) {
+        //        alert(result.success); // result is an object which is created from the returned JSON
+        //    },
+        //});
+    }
+
+    axios.get('/api/courses').then(response => appendToTable(response.data));</script>

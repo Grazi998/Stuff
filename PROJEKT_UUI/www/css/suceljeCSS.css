@@ -1,0 +1,48 @@
+body {
+    background-color: cadetblue;
+}
+#suceljeDIV{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid black;
+
+}
+/* table.menu{
+} */
+table.menu td button {
+    display: block;
+    text-decoration: none;
+    padding: 80px 60px;
+    background: rgb(128, 128, 128);
+    color: white;
+    font-weight: normal;
+    font-size: 150%;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.05);
+    -webkit-transition: all 0.1s ease-in;
+    -ms-transition: all 0.1s ease-in;
+    -moz-transition: all 0.1s ease-in;
+    -o-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
+}     
+table.menu td button.prvi {
+    background: rgb(238, 124, 0);
+}     
+table.menu td button.drugi {
+    background: rgb(0, 92, 192);
+} 
+table.menu td button:hover {
+    background: rgb(48, 48, 48);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+    -moz-box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.12);
+}
+        
