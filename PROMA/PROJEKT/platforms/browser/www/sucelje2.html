@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="css/sucelje2CSS.css" type="text/css" rel="stylesheet" />
+        <script type="text/javascript" src="js/sucelje2JS.js"></script>
+        <!-- <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>Sucelje2PT</title>
+
+    </head>
+    <body>
+        <div class="viewport">
+            <header class="header" role="banner">
+              
+              <nav id="nav" class="nav" role="navigation">
+                
+                <!-- ACTUAL NAVIGATION MENU -->
+                <ul class="nav__menu" id="menu" tabindex="-1" aria-label="main navigation" hidden>
+                  <li  class="nav__item"><a id="vault" href="#" class="nav__link">VAULT</a></li>
+                  <li  class="nav__item"><a id="account" href="#" class="nav__link">ACCOUNT</a></li>
+                  <li  class="nav__item"><a id="out" href="#" class="nav__link">LOG OUT</a></li>
+                </ul>
+                
+                <!-- MENU TOGGLE BUTTON -->
+                <a href="#nav" class="nav__toggle" role="button" aria-expanded="false" aria-controls="menu">
+                  <svg class="menuicon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+                    <title>Toggle Menu</title>
+                    <g>
+                      <line class="menuicon__bar" x1="13" y1="16.5" x2="37" y2="16.5"/>
+                      <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5"/>
+                      <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5"/>
+                      <line class="menuicon__bar" x1="13" y1="32.5" x2="37" y2="32.5"/>
+                      <circle class="menuicon__circle" r="23" cx="25" cy="25" />
+                    </g>
+                  </svg>
+                </a>
+                
+                <!-- ANIMATED BACKGROUND ELEMENT -->
+                <div class="splash"></div>
+                
+              </nav>
+              
+            </header>
+            
+            <!-- DEMO CONTENT -->
+            <main id="glavni" class="main" role="main">
+              <div class="gallery" aria-label="gallery">
+                <button id="dokumenti" class="gallery__item">DOCUMENTS</button>
+                <button id="slike" class="gallery__item">PICTURES</button>
+                <button id="glazba" class="gallery__item">MUSIC</button>
+                <button id="video" class="gallery__item">VIDEO</button>
+                <button id="github" class="gallery__item">GITHUB</button>
+                <button id="ostalo" class="gallery__item">OTHER</button>
+
+              </div>
+            </main>
+          </div>
+    </body>
+</html>

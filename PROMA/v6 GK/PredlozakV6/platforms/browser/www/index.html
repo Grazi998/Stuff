@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="cordova.js"></script>
+        <!-- Link na CSS stil -->
+        <link href="css/glavniStil.css" type="text/css" rel="stylesheet" />
+        <!-- Link na JavaScript datoteku -->
+        <script type="text/javascript" src="js/main.js"></script>
+        <link rel="stylesheet"href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>Predložak</title>
+    </head>
+    <body>
+      <div id="aplikacija">
+        <h1>Tečajna lista</h1>
+        <input type="number" id="input">
+        <button id="btnDohvati">Dohvati valute</button>
+        <button id="btnInverz">Inverz</button>
+        <br>
+        
+        <p>
+          <span id="numUSD"></span>
+          EUR =
+          <span id="span1"></span>
+          USD
+        </p>
+        <p>
+          <span id="numHRK"></span>
+          EUR =
+          <span id="span2"></span>
+          HRK
+        </p>
+        <p>
+          <span id="numGBP"></span>
+          EUR =
+          <span id="span3"></span>
+          GBP
+        </p>
+        <p id="date"></p>
+      </div>
+    </body>
+</html>

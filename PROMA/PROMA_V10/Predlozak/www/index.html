@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- <script type="text/javascript" src="cordova.js"></script> -->
+        <!-- Link na CSS stil -->
+        <link href="css/glavniStil.css" type="text/css" rel="stylesheet" />
+        <!-- Link na JavaScript datoteku -->
+        <script type="text/javascript" src="js/main.js"></script>
+        <link rel="stylesheet"href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>Predložak</title>
+    </head>
+    <body>
+      <h1>Vj10 - Media Player</h1>
+      <div id="media">
+        <audio id="audio">
+            <!-- <source id="izvor1" src="res/01_prva.mp3" type="audio/ogg"> -->
+            <source id="izvor2" src="res/Fetty Wap - Trap Queen (K Theory Remix).mp3" type="audio/mpeg">
+            Vaš preglednik ne podržava audio oznaku
+        </audio>
+        <!-- <br>
+        <video controls width="50%" height="50%">
+            <source src="res/00_printer.mp4" type="video/mp4">
+            Vaš preglednik ne podržava audio oznaku
+        </video> -->
+
+      </div>
+      <div id="buttons">
+        <button id="play">Play</button>
+        <button id="pauza">Pauza</button>
+        <button id="stop">Stop</button>
+        <label>Volume: </label>
+        <input type="range" id="glasnoca" min="0" max="100" value="10" step="5" data-highlight="true">
+        <label>Proteklo vrijeme: <span id="vrijeme"></span></label>
+      </div>
+      <div id="popis">
+        <ul data-role="listview">
+          <li data-role="list-divider">Pjesme</li>
+          <li><a id="1" href="#">01.Prva</a></li>
+          <li><a id="2" href="#">02.Druga</a></li>
+          <li><a id="3" href="#">03.Treća</a></li>
+        </ul>
+      </div>
+    </body>
+</html>

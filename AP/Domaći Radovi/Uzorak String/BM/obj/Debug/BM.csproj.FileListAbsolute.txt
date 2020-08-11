@@ -1,0 +1,20 @@
+C:\Users\student.3-71-06\Desktop\BM-zadatak\BM\bin\Debug\BM.exe.config
+C:\Users\student.3-71-06\Desktop\BM-zadatak\BM\bin\Debug\BM.exe
+C:\Users\student.3-71-06\Desktop\BM-zadatak\BM\bin\Debug\BM.pdb
+C:\Users\student.3-71-06\Desktop\BM-zadatak\BM\obj\Debug\BM.csprojAssemblyReference.cache
+C:\Users\student.3-71-06\Desktop\BM-zadatak\BM\obj\Debug\BM.Form1.resources
+C:\Users\student.3-71-06\Desktop\BM-zadatak\BM\obj\Debug\BM.Properties.Resources.resources
+C:\Users\student.3-71-06\Desktop\BM-zadatak\BM\obj\Debug\BM.csproj.GenerateResource.cache
+C:\Users\student.3-71-06\Desktop\BM-zadatak\BM\obj\Debug\BM.csproj.CoreCompileInputs.cache
+C:\Users\student.3-71-06\Desktop\BM-zadatak\BM\obj\Debug\BM.exe
+C:\Users\student.3-71-06\Desktop\BM-zadatak\BM\obj\Debug\BM.pdb
+C:\Users\Graziano\OneDrive\Faks\4. Semestar\AP\Domaći Radovi\Uzorak String\BM\bin\Debug\BM.exe.config
+C:\Users\Graziano\OneDrive\Faks\4. Semestar\AP\Domaći Radovi\Uzorak String\BM\bin\Debug\BM.exe
+C:\Users\Graziano\OneDrive\Faks\4. Semestar\AP\Domaći Radovi\Uzorak String\BM\bin\Debug\BM.pdb
+C:\Users\Graziano\OneDrive\Faks\4. Semestar\AP\Domaći Radovi\Uzorak String\BM\obj\Debug\BM.csprojAssemblyReference.cache
+C:\Users\Graziano\OneDrive\Faks\4. Semestar\AP\Domaći Radovi\Uzorak String\BM\obj\Debug\BM.Form1.resources
+C:\Users\Graziano\OneDrive\Faks\4. Semestar\AP\Domaći Radovi\Uzorak String\BM\obj\Debug\BM.Properties.Resources.resources
+C:\Users\Graziano\OneDrive\Faks\4. Semestar\AP\Domaći Radovi\Uzorak String\BM\obj\Debug\BM.csproj.GenerateResource.cache
+C:\Users\Graziano\OneDrive\Faks\4. Semestar\AP\Domaći Radovi\Uzorak String\BM\obj\Debug\BM.csproj.CoreCompileInputs.cache
+C:\Users\Graziano\OneDrive\Faks\4. Semestar\AP\Domaći Radovi\Uzorak String\BM\obj\Debug\BM.exe
+C:\Users\Graziano\OneDrive\Faks\4. Semestar\AP\Domaći Radovi\Uzorak String\BM\obj\Debug\BM.pdb

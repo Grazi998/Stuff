@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="cordova.js"></script>
+        <!-- Link na CSS stil -->
+        <link href="css/glavniStil.css" type="text/css" rel="stylesheet" />
+        <!-- Link na JavaScript datoteku -->
+        <script type="text/javascript" src="js/main.js"></script>
+        <link rel="stylesheet"href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>Predložak</title>
+    </head>
+    <body>
+      <div data-role="page" id="prva">
+
+        <div data-role="header">
+          <h1>Unos podataka</h1>
+        </div >
+
+        <div role="main" class="ui-content">
+            <div data-role="collapsible-set">
+
+                <div data-role="collapsible">
+                  <h1>Osobni podaci</h1>
+                  <form action="">
+                    <label for="ime">Unesite svoje ime:</label>
+                    <input type="text" id="ime">
+                    <label for="Email">Unesite svoj email:</label>
+                    <input type="email" id="email">
+                    <label for="godina">Unesite godinu rođenja:</label>
+                    <input type="number" id="godina">
+                  </form>
+                </div>
+
+                <div data-role="collapsible">
+                  <h1>Studij</h1>
+                  <label for="">
+                      <input type="radio" id="prediplo" name="choice" value="prediplomski" />
+                      Prediplomski
+                  </label>
+                  <label for="">
+                      <input type="radio" id="diplo" name="choice" value="diplomski" />
+                      Diplomski
+                  </label>
+                  <p>Zaposlen:</p>
+                  <input type="checkbox" id="flip" data-role="flipswitch"/>                 
+
+                </div>
+                <a href="#druga"><button>NASTAVI</button></a>
+            </div>
+        </div>
+
+        <div data-role="footer">
+          <h3>PROMA 2019</h3>
+
+        </div>
+      </div>
+
+
+
+      <div data-role="page" id="druga">
+        <div data-role="header">
+          <h3>Izvješće</h3>
+        </div>
+
+        <div role="main">
+          <h1>Podaci o studentu</h1>
+
+          <div>Ime: <span id="unosime"></span></div>
+          <div>Email: <span id="unosmail"></span></div>
+          <div>Zaposlen(a): <span id="unoszaposlen"></span></div>
+          <div>Student(ica): <span id="unosgodina"></span> godina, i trenutno je upisan/a na <span id="studij"></span ></div>
+
+          <button id="dohvatipodatke">Dohvati podatke</button>          
+          <a href="#prva"><button>NATRAG</button></a>
+
+          
+        </div>
+
+        <div data-role="footer">
+          <h3>PROMA2019</h3>
+
+        </div>
+
+
+      </div>
+
+      <div data-role="page" id="treca">
+        <div data-role="header">
+            <h1>vjezba04</h1>
+        </div>
+        <div role="main">
+          <p id="spreman"></p>
+          <p id="manufact"></p>
+          <p id="model"></p>
+          <p id="serijal"></p>
+          <p id="cord"></p>
+          <p id="platform"></p>
+          <p id="virtual"></p>
+          <p id="uuid"></p>
+        </div>
+
+        <div data-role="footer">
+          <h1>PROMA2019</h1>
+        </div>
+
+    </div>
+
+
+    </body>
+</html>

@@ -1,0 +1,39 @@
+C:\Users\Divna\Desktop\Vizualizacija\Vizualizacija\bin\Debug\Vizualizacija.exe.config
+C:\Users\Divna\Desktop\Vizualizacija\Vizualizacija\bin\Debug\Vizualizacija.exe
+C:\Users\Divna\Desktop\Vizualizacija\Vizualizacija\bin\Debug\Vizualizacija.pdb
+C:\Users\Divna\Desktop\Vizualizacija\Vizualizacija\obj\Debug\Vizualizacija.csprojResolveAssemblyReference.cache
+C:\Users\Divna\Desktop\Vizualizacija\Vizualizacija\obj\Debug\Vizualizacija.Form1.resources
+C:\Users\Divna\Desktop\Vizualizacija\Vizualizacija\obj\Debug\Vizualizacija.Properties.Resources.resources
+C:\Users\Divna\Desktop\Vizualizacija\Vizualizacija\obj\Debug\Vizualizacija.csproj.GenerateResource.Cache
+C:\Users\Divna\Desktop\Vizualizacija\Vizualizacija\obj\Debug\Vizualizacija.exe
+C:\Users\Divna\Desktop\Vizualizacija\Vizualizacija\obj\Debug\Vizualizacija.pdb
+C:\Users\student\Desktop\Vizualizacija\Vizualizacija\bin\Debug\Vizualizacija.exe.config
+C:\Users\student\Desktop\Vizualizacija\Vizualizacija\bin\Debug\Vizualizacija.exe
+C:\Users\student\Desktop\Vizualizacija\Vizualizacija\bin\Debug\Vizualizacija.pdb
+C:\Users\student\Desktop\Vizualizacija\Vizualizacija\obj\Debug\Vizualizacija.csprojAssemblyReference.cache
+C:\Users\student\Desktop\Vizualizacija\Vizualizacija\obj\Debug\Vizualizacija.Form1.resources
+C:\Users\student\Desktop\Vizualizacija\Vizualizacija\obj\Debug\Vizualizacija.Properties.Resources.resources
+C:\Users\student\Desktop\Vizualizacija\Vizualizacija\obj\Debug\Vizualizacija.csproj.GenerateResource.cache
+C:\Users\student\Desktop\Vizualizacija\Vizualizacija\obj\Debug\Vizualizacija.csproj.CoreCompileInputs.cache
+C:\Users\student\Desktop\Vizualizacija\Vizualizacija\obj\Debug\Vizualizacija.exe
+C:\Users\student\Desktop\Vizualizacija\Vizualizacija\obj\Debug\Vizualizacija.pdb
+C:\Users\Graziano\OneDrive\Faks\4. Semestar\AP\Vizualizacija\Vizualizacija\bin\Debug\Vizualizacija.exe.config
+C:\Users\Graziano\OneDrive\Faks\4. Semestar\AP\Vizualizacija\Vizualizacija\bin\Debug\Vizualizacija.exe
+C:\Users\Graziano\OneDrive\Faks\4. Semestar\AP\Vizualizacija\Vizualizacija\bin\Debug\Vizualizacija.pdb
+C:\Users\Graziano\OneDrive\Faks\4. Semestar\AP\Vizualizacija\Vizualizacija\obj\Debug\Vizualizacija.csprojAssemblyReference.cache
+C:\Users\Graziano\OneDrive\Faks\4. Semestar\AP\Vizualizacija\Vizualizacija\obj\Debug\Vizualizacija.Form1.resources
+C:\Users\Graziano\OneDrive\Faks\4. Semestar\AP\Vizualizacija\Vizualizacija\obj\Debug\Vizualizacija.Properties.Resources.resources
+C:\Users\Graziano\OneDrive\Faks\4. Semestar\AP\Vizualizacija\Vizualizacija\obj\Debug\Vizualizacija.csproj.GenerateResource.cache
+C:\Users\Graziano\OneDrive\Faks\4. Semestar\AP\Vizualizacija\Vizualizacija\obj\Debug\Vizualizacija.csproj.CoreCompileInputs.cache
+C:\Users\Graziano\OneDrive\Faks\4. Semestar\AP\Vizualizacija\Vizualizacija\obj\Debug\Vizualizacija.exe
+C:\Users\Graziano\OneDrive\Faks\4. Semestar\AP\Vizualizacija\Vizualizacija\obj\Debug\Vizualizacija.pdb
+C:\Users\Graziano\OneDrive\Faks\4. Semestar\AP\Domaći Radovi\Vizualizacija\Vizualizacija\bin\Debug\Vizualizacija.exe.config
+C:\Users\Graziano\OneDrive\Faks\4. Semestar\AP\Domaći Radovi\Vizualizacija\Vizualizacija\bin\Debug\Vizualizacija.exe
+C:\Users\Graziano\OneDrive\Faks\4. Semestar\AP\Domaći Radovi\Vizualizacija\Vizualizacija\bin\Debug\Vizualizacija.pdb
+C:\Users\Graziano\OneDrive\Faks\4. Semestar\AP\Domaći Radovi\Vizualizacija\Vizualizacija\obj\Debug\Vizualizacija.csprojAssemblyReference.cache
+C:\Users\Graziano\OneDrive\Faks\4. Semestar\AP\Domaći Radovi\Vizualizacija\Vizualizacija\obj\Debug\Vizualizacija.Form1.resources
+C:\Users\Graziano\OneDrive\Faks\4. Semestar\AP\Domaći Radovi\Vizualizacija\Vizualizacija\obj\Debug\Vizualizacija.Properties.Resources.resources
+C:\Users\Graziano\OneDrive\Faks\4. Semestar\AP\Domaći Radovi\Vizualizacija\Vizualizacija\obj\Debug\Vizualizacija.csproj.GenerateResource.cache
+C:\Users\Graziano\OneDrive\Faks\4. Semestar\AP\Domaći Radovi\Vizualizacija\Vizualizacija\obj\Debug\Vizualizacija.csproj.CoreCompileInputs.cache
+C:\Users\Graziano\OneDrive\Faks\4. Semestar\AP\Domaći Radovi\Vizualizacija\Vizualizacija\obj\Debug\Vizualizacija.exe
+C:\Users\Graziano\OneDrive\Faks\4. Semestar\AP\Domaći Radovi\Vizualizacija\Vizualizacija\obj\Debug\Vizualizacija.pdb

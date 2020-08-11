@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="cordova.js"></script>
+        <!-- Link na CSS stil -->
+        <link href="css/glavniStil.css" type="text/css" rel="stylesheet" />
+        <!-- Link na JavaScript datoteku -->
+        <script type="text/javascript" src="js/main.js"></script>
+        <link rel="stylesheet"href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>Predložak</title>
+    </head>
+    <body>
+      <div id="aplikacija">
+        <h1>Moje pjesme</h1>
+        <label for="text">ID</label>
+        <input id="idPjesma" readonly>
+        <label for="text">Naziv pjesme:</label>
+        <input type="text" id="pjesma">
+        <label for="text">Ime autora:</label>
+        <input type="text" id="autor">
+        <label for="text">Godina</label>
+        <input type="number" id="godina">
+        <button id="btnDodaj">Dodaj u popis</button>
+        <button id="btnPrikazi">Prikaži popis</button>
+        <button id="btnObrisi">Obriši popis</button>
+      </div>
+      <div id="info">
+
+      </div>
+    </body>
+</html>

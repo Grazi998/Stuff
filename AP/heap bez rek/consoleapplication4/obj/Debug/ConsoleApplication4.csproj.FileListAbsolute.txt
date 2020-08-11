@@ -1,0 +1,15 @@
+C:\Users\dkrpan\Desktop\konz\ConsoleApplication4\ConsoleApplication4\bin\Debug\ConsoleApplication4.exe.config
+C:\Users\dkrpan\Desktop\konz\ConsoleApplication4\ConsoleApplication4\bin\Debug\ConsoleApplication4.exe
+C:\Users\dkrpan\Desktop\konz\ConsoleApplication4\ConsoleApplication4\bin\Debug\ConsoleApplication4.pdb
+C:\Users\dkrpan\Desktop\konz\ConsoleApplication4\ConsoleApplication4\obj\Debug\ConsoleApplication4.csprojResolveAssemblyReference.cache
+C:\Users\dkrpan\Desktop\konz\ConsoleApplication4\ConsoleApplication4\obj\Debug\ConsoleApplication4.exe
+C:\Users\dkrpan\Desktop\konz\ConsoleApplication4\ConsoleApplication4\obj\Debug\ConsoleApplication4.pdb
+E:\Dropbox\Nastava\Nastava_1415\SPA_1415\SPA_1415_pred\SPA_1415_pred_share\spa_p09\heap bez rek\ConsoleApplication4\bin\Debug\ConsoleApplication4.exe.config
+E:\Dropbox\Nastava\Nastava_1415\SPA_1415\SPA_1415_pred\SPA_1415_pred_share\spa_p09\heap bez rek\ConsoleApplication4\obj\Debug\ConsoleApplication4.exe
+E:\Dropbox\Nastava\Nastava_1415\SPA_1415\SPA_1415_pred\SPA_1415_pred_share\spa_p09\heap bez rek\ConsoleApplication4\obj\Debug\ConsoleApplication4.pdb
+E:\Dropbox\Nastava\Nastava_1415\SPA_1415\SPA_1415_pred\SPA_1415_pred_share\spa_p09\heap bez rek\ConsoleApplication4\bin\Debug\ConsoleApplication4.exe
+E:\Dropbox\Nastava\Nastava_1415\SPA_1415\SPA_1415_pred\SPA_1415_pred_share\spa_p09\heap bez rek\ConsoleApplication4\bin\Debug\ConsoleApplication4.pdb
+E:\Dropbox\Nastava\Nastava_1415\SPA_1415\SPA_1415_pred\SPA_1415_pred_share\spa_p09\heap bez rek\ConsoleApplication4\obj\Debug\ConsoleApplication4.csprojResolveAssemblyReference.cache
+E:\Dropbox\Nastava\Nastava_1516\SPA_1516_vjezbe\SPA_1516_pred\spa_p09\heap bez rek\ConsoleApplication4\bin\Debug\ConsoleApplication4.exe.config
+E:\Dropbox\Nastava\Nastava_1516\SPA_1516_vjezbe\SPA_1516_pred\spa_p09\heap bez rek\ConsoleApplication4\obj\Debug\ConsoleApplication4.exe
+E:\Dropbox\Nastava\Nastava_1516\SPA_1516_vjezbe\SPA_1516_pred\spa_p09\heap bez rek\ConsoleApplication4\obj\Debug\ConsoleApplication4.pdb

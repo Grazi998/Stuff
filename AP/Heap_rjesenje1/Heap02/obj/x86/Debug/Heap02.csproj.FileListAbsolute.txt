@@ -1,0 +1,26 @@
+C:\Documents and Settings\Divna\Desktop\SPAtemp\SPA_v09\Heap02\Heap02\bin\Debug\Heap02.exe
+C:\Documents and Settings\Divna\Desktop\SPAtemp\SPA_v09\Heap02\Heap02\bin\Debug\Heap02.pdb
+C:\Documents and Settings\Divna\Desktop\SPAtemp\SPA_v09\Heap02\Heap02\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Divna\Desktop\SPAtemp\SPA_v09\Heap02\Heap02\obj\x86\Debug\Heap02.Form1.resources
+C:\Documents and Settings\Divna\Desktop\SPAtemp\SPA_v09\Heap02\Heap02\obj\x86\Debug\Heap02.Properties.Resources.resources
+C:\Documents and Settings\Divna\Desktop\SPAtemp\SPA_v09\Heap02\Heap02\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Divna\Desktop\SPAtemp\SPA_v09\Heap02\Heap02\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Divna\Desktop\SPAtemp\SPA_v09\Heap02\Heap02\obj\x86\Debug\Heap02.exe
+C:\Documents and Settings\Divna\Desktop\SPAtemp\SPA_v09\Heap02\Heap02\obj\x86\Debug\Heap02.pdb
+C:\Documents and Settings\Divna\Desktop\SPAtemp\SPA_v09\Heap03\Heap02\obj\x86\Debug\Heap02.exe
+C:\Documents and Settings\Divna\Desktop\SPAtemp\SPA_v09\Heap03\Heap02\obj\x86\Debug\Heap02.pdb
+C:\Documents and Settings\Divna\Desktop\SPAtemp\SPA_v09\Heap03\Heap02\bin\Debug\Heap02.exe
+C:\Documents and Settings\Divna\Desktop\SPAtemp\SPA_v09\Heap03\Heap02\bin\Debug\Heap02.pdb
+C:\Documents and Settings\Divna\Desktop\SPAtemp\SPA_v09\Heap03\Heap02\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Divna\Desktop\SPAtemp\SPA_v09\Heap03\Heap02\obj\x86\Debug\Heap02.Form1.resources
+C:\Documents and Settings\Divna\Desktop\SPAtemp\SPA_v09\Heap03\Heap02\obj\x86\Debug\Heap02.Properties.Resources.resources
+C:\Documents and Settings\Divna\Desktop\SPAtemp\SPA_v09\Heap03\Heap02\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Divna\Desktop\SPAtemp\SPA_v09\Heap03\Heap02\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Divna\Google Drive\Nastava\Nastava_1819\_ljetni_1819\AP_1819\SPA_v09 - heap\Heap_rjesenje1\Heap02\obj\x86\Debug\Heap02.exe
+C:\Users\Divna\Google Drive\Nastava\Nastava_1819\_ljetni_1819\AP_1819\SPA_v09 - heap\Heap_rjesenje1\Heap02\obj\x86\Debug\Heap02.pdb
+C:\Users\Divna\Google Drive\Nastava\Nastava_1819\_ljetni_1819\AP_1819\SPA_v09 - heap\Heap_rjesenje1\Heap02\bin\Debug\Heap02.exe
+C:\Users\Divna\Google Drive\Nastava\Nastava_1819\_ljetni_1819\AP_1819\SPA_v09 - heap\Heap_rjesenje1\Heap02\bin\Debug\Heap02.pdb
+C:\Users\Divna\Google Drive\Nastava\Nastava_1819\_ljetni_1819\AP_1819\SPA_v09 - heap\Heap_rjesenje1\Heap02\obj\x86\Debug\Heap02.csprojResolveAssemblyReference.cache
+C:\Users\Divna\Google Drive\Nastava\Nastava_1819\_ljetni_1819\AP_1819\SPA_v09 - heap\Heap_rjesenje1\Heap02\obj\x86\Debug\Heap02.Form1.resources
+C:\Users\Divna\Google Drive\Nastava\Nastava_1819\_ljetni_1819\AP_1819\SPA_v09 - heap\Heap_rjesenje1\Heap02\obj\x86\Debug\Heap02.Properties.Resources.resources
+C:\Users\Divna\Google Drive\Nastava\Nastava_1819\_ljetni_1819\AP_1819\SPA_v09 - heap\Heap_rjesenje1\Heap02\obj\x86\Debug\Heap02.csproj.GenerateResource.Cache

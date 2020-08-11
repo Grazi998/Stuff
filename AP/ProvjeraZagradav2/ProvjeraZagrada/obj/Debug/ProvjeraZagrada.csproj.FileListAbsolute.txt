@@ -1,0 +1,9 @@
+C:\Users\Divna\Desktop\ProvjeraZagrada\ProvjeraZagrada\bin\Debug\ProvjeraZagrada.exe.config
+C:\Users\Divna\Desktop\ProvjeraZagrada\ProvjeraZagrada\bin\Debug\ProvjeraZagrada.exe
+C:\Users\Divna\Desktop\ProvjeraZagrada\ProvjeraZagrada\bin\Debug\ProvjeraZagrada.pdb
+C:\Users\Divna\Desktop\ProvjeraZagrada\ProvjeraZagrada\obj\Debug\ProvjeraZagrada.csprojResolveAssemblyReference.cache
+C:\Users\Divna\Desktop\ProvjeraZagrada\ProvjeraZagrada\obj\Debug\ProvjeraZagrada.Form1.resources
+C:\Users\Divna\Desktop\ProvjeraZagrada\ProvjeraZagrada\obj\Debug\ProvjeraZagrada.Properties.Resources.resources
+C:\Users\Divna\Desktop\ProvjeraZagrada\ProvjeraZagrada\obj\Debug\ProvjeraZagrada.csproj.GenerateResource.Cache
+C:\Users\Divna\Desktop\ProvjeraZagrada\ProvjeraZagrada\obj\Debug\ProvjeraZagrada.exe
+C:\Users\Divna\Desktop\ProvjeraZagrada\ProvjeraZagrada\obj\Debug\ProvjeraZagrada.pdb

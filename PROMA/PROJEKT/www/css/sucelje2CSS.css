@@ -1,0 +1,261 @@
+/* // ---------------------------
+// Vars & Helper Functions
+// --------------------------- */
+
+:root {
+  --screen-width:     100vw;
+  --screen-height:    100vh;
+  --header-bg-color:  #673AB7;
+  --splash-bg-color:  #368887;
+  
+}
+
+/* // calculate a circle's circumference based on radius */
+/* @function circumference($r){
+  $pi: 3.141592653;
+  @return 2*$pi*$r;
+} */
+
+
+/* // ---------------------------
+// Main Navigation Menu
+// --------------------------- */
+
+.nav__toggle {
+    display:inline-block;
+    position:absolute;
+    z-index:10;
+    padding:0;
+    border:0;
+    background:transparent;
+    outline:0;
+    right:15px;
+    top:15px;
+    cursor:pointer;
+    border-radius:50%;
+    transition:background-color .15s linear;
+    
+    
+}
+.nav__toggle:hover,
+.nav__toggle:focus {
+      background-color:rgba(0,0,0,.5);
+}
+  
+.nav__menu {
+  list-style-type: none;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    height:var(--screen-height);
+    position:relative;
+    z-index:5;
+    visibility:hidden;
+}
+  
+.nav__item {
+    opacity:0;
+    transition: all .3s cubic-bezier(0.000, 0.995, 0.990, 1.000) .3s;
+}
+/* @for $i from 1 through 5 {
+&__item:nth-child(#{$i}){
+    transform:translateY(-40px * $i);
+    }
+} */
+  
+.nav__link {
+    color:white;
+    display:block;
+    text-align:center;
+    text-transform:uppercase;
+    letter-spacing:5px;
+    font-size:1.25rem;
+    text-decoration:none;
+    padding:1rem;
+    
+    
+  }
+  .nav__link:hover,
+  .nav__link:focus {
+    outline:0;
+    background-color:rgba(0,0,0,0.2);
+  }
+
+
+/* // ---------------------------
+// SVG Menu Icon
+// --------------------------- */
+
+.menuicon {
+  display:block;
+  cursor:pointer;
+  color: white;
+  
+  transform:rotate(0deg);
+  transition: .3s cubic-bezier(0.165, 0.840, 0.440, 1.000); 
+  
+  
+}
+
+.menuicon__bar,
+.menuicon__circle {
+    fill:none;
+    stroke: currentColor;
+    stroke-width:3;
+    stroke-linecap:round;
+}
+.menuicon__bar {
+    transform: rotate(0deg);
+    transform-origin:50% 50%;
+    transition: transform .25s ease-in-out;
+}
+.menuicon__circle {
+    transition: stroke-dashoffset .3s linear .1s;
+    /* stroke-dashoffset:circumference(23);
+    stroke-dasharray:circumference(23); */
+}
+
+
+/* // ---------------------------
+// Circular Splash Background
+// --------------------------- */
+
+.splash {
+  position:absolute;
+  top:40px;
+  right:40px;
+  width: 1px;
+  height: 1px;
+  
+  
+}
+.splash::after {
+    content:"";
+    display:block;
+    position:absolute;
+    border-radius:50%;
+    background-color:var(--splash-bg-color);
+    
+    /* // screen diameter can be 142vmax at most,
+    // circle needs to be twice that size to cover it */
+    width:284vmax;
+    height:284vmax;
+    top:-142vmax;
+    left:-142vmax;
+    
+    transform: scale(0);
+    transform-origin:50% 50%;
+    transition: transform .5s cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    
+    /* // will-change tells the browser we plan to 
+    // animate this property in the near future */
+    will-change:transform;
+  }
+
+
+/* // ---------------------------
+// Active State
+// --------------------------- */
+
+
+.nav:target,
+.nav--open > .splash::after
+  {
+    transform:scale(1);
+  }
+  
+  .nav:target,
+  .nav--open .menuicon {
+    color:white;
+    transform:rotate(180deg);
+    
+  }
+ 
+  .nav:target,
+  .nav--open .menuicon circle {
+    stroke-dashoffset:0;
+  }
+ 
+  .nav:target,
+  .nav--open .menuico__bar:nth-child(1),
+ 
+  .nav:target,
+  .nav--open .menuico__bar:nth-child(4) {
+    opacity:0;
+  }
+ 
+  .nav:target,
+  .nav--open .menuico__bar:nth-child(2) {
+    transform: rotate(45deg);
+  }
+
+  .nav:target,
+  .nav--open  .menuicon__bar:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+  
+
+  .nav:target,
+  .nav--open  .nav__menu {
+    visibility:visible;
+  }
+
+  .nav:target,
+  .nav--open .nav__item {
+    opacity:1;
+    transform:translateY(0);
+  }
+
+/* // ---------------------------
+// Demo Stuff, Ignore
+// --------------------------- */
+
+body {
+  background-color:#D7D7D7;
+  font-family: 'Roboto';
+  /* min-height:100vh; */
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  margin: 0;
+}
+
+.viewport {
+  width:var(--screen-width);
+  height:var(--screen-height);
+  margin:0 auto;
+  position:relative;
+  overflow:hidden;
+  background-color:white;
+}
+
+.header {
+  height:5rem;
+  background-color:var(--header-bg-color);
+}
+
+.main {
+  display: block;
+  padding:20px;
+  /* overflow-y: scroll; */
+}
+
+.gallery {
+  display:grid;
+  grid-template-columns:repeat(auto-fill, minmax(130px, 1fr));
+  grid-auto-rows: 130px;
+  grid-gap:20px;  
+  
+}
+.gallery__item {
+  display: block;
+  height:100%;
+  background-color:orange;
+  text-align: center;
+  text-decoration: none;
+    
+  }
+  .gallery__item:hover,
+  .gallery__item:focus {
+    background-color:#A4A4A4;
+  }
