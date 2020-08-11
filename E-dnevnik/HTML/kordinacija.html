@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-2">
+<title>{{get("title")}} </title>
+<style>
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #448ed3;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #45a049;
+}
+
+#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #448ed3;
+  color: white;
+}
+
+.button {
+  background-color: #1c87c9;
+   border: none;
+    color: white;
+         padding: 20px 34px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 20px;
+         margin: 4px 2px;
+         cursor: pointer;
+         }
+
+
+input[type=submit] {
+  background-color: #448ed3;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+</style>
+</head>
+<body>
+
+
+<ul>
+  <li><a href="">Kordinacija</a></li>
+  <li><a href="/izbornikAdmin/kordinacija">Predmet-nastavnik</a></li>
+  <li><a href="/izbornikAdmin/kordinacija/razred_nastava">Razred-Nastava</a></li>
+    <li><a href="/izbornikAdmin/kordinacija/razrednik">Razrednik</a></li>
+  <li><a href="/izbornikAdmin">Nazad</a></li>
+  <li> </li>
+</ul>
+<h3> Predmet-ucitelj</h3>
+
+	<table id="customers">
+	<tr>
+		<th>Maticni broj</th>
+		<th>Ime</th>
+		<th>Prezime</th>
+		<th>Predmet</th>
+		<th></th>
+
+	</tr>
+	
+
+ 	% for pn_mb, n_ime, n_prezime,p_razina,p_naziv,p_mb,n_mb in pn:
+	<form action="/del_pu" method="POST">
+	<tr>
+		<td>{{ n_mb }}</td>
+		<td>{{ n_ime }}</td>
+		<td>{{ n_prezime}}</td>
+		<td>{{ p_naziv }}</td>
+		<input type="hidden" name="pn_mb" value={{pn_mb}}>
+		<input type="hidden" name="nastavnikID" value={{n_mb}}>
+		
+		
+		
+		<td><input type="submit" name="action" value="Izbrisi"> </td>
+
+	</tr>
+	</form>
+	% end
+</table>
+
+<br>
+<h3> Predmet-profesor</h3>
+
+<table id="customers">
+	<tr>
+		<th>Maticni broj</th>
+		<th>Ime</th>
+		<th>Prezime</th>
+		<th>Predmet</th>
+		<th></th>
+
+	</tr>	
+ 	% for pn_mb, n_ime, n_prezime,p_razina,p_naziv,p_mb,n_mb in pp:
+	<form action="/del_pp" method="POST">
+	
+	<tr>
+		<td>{{ pn_mb }}</td>
+		<td>{{ n_ime }}</td>
+		<td>{{ n_prezime}}</td>
+		<td>{{ p_naziv }}</td>
+		  <input type="hidden" name="pn_mb" value={{pn_mb}}>
+		  <input type="hidden" name="predmet" value={{p_naziv}}>
+		  <input type="hidden" name="nastavnikID" value={{n_mb}}>
+		
+		
+		<td><input type="submit" name="action" value="Izbrisi"> </td>
+
+	</tr>
+	</form>
+	% end
+</table>
+
+<br>
+<h3>Nastavnici Unos predmeta</h3>
+
+
+	<table id="customers">
+	<tr>
+		<th>Maticni broj</th>
+		<th>Ime</th>
+		<th>Prezime</th>
+		<th>Korisnicko ime</th>
+		<th>Predmet</th>
+		<th></th>
+
+	</tr>
+	
+
+	% for mb, ime, prezime,username,  in nastavnici:
+	<form action="/add_pn" method="POST">
+	<tr>
+		<td>{{ mb }}</td>
+		<td>{{ ime }}</td>
+		<td>{{ prezime}}</td>
+		<td>{{username}}
+		<td>   <div class="col-75">
+	  	    <select type="text" name="naziv" placeholder="Razina...">
+    <option value="1">1-4</option>
+    <option value="Hrvatski">Hrvatski</option>
+    <option value="Matematika">Matematika</option>
+    <option value="Engleski">Engleski</option>
+	<option value="Tjelesni">Tjelesni</option>
+    <option value="Geografija">Geografija</option>
+    <option value="Povijest">Povijest</option>
+    <option value="Biologija">Biologija</option>
+	 <option value="Informatika">Informatika</option>
+    <option value="Tehnicki">Tehnicki</option>
+    <option value="Fizika">Fizika</option>
+	 <option value="Kemija">Kemija</option>
+  </select> </td>
+  <input type="hidden" name="nastavnik" value={{mb}}>
+  		<td><input type="submit" name="action" value="Dodaj"></td>
+
+	</tr>
+	</form>
+	% end
+</table>		
+</body>
+
+</html>

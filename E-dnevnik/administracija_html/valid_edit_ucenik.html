@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta  name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>Uredjivanje ucenika </title>
+<style>
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #448ed3;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+
+li a:hover {
+  background-color: #45a049;
+}
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #448ed3;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 50%;
+    margin-top: 0;
+  }
+}
+#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #448ed3;
+  color: white; }
+
+
+</style>
+</head>
+<body>
+<ul>
+  <li><a href="">Uredi</a></li>
+  <li><a href="/izbornikAdmin/ucenik">Nazad</a></li>
+ 
+  <li> </li>
+</ul>
+<h2> Los unos, ponovite:</h2><br>
+	<table id="customers">
+	<tr>
+		<th>Maticni broj</th>
+		<th>Ime</th>
+		<th>Prezime</th>
+		<th>Razred</th>
+		<th>Odjeljenje</th>
+	</tr>	
+	<tr>
+		<td>{{ mb }}</td>
+		<td>{{ ime }}</td>
+		<td>{{ prezime}}</td>
+		<td>{{ razred}}</td>
+		<td>{{ odjeljenje}}</td>
+		
+	</tr>
+
+</table>
+	<br>
+	<div class="container">
+  <form action="/submit_ucenik" method="post">
+  <input type="hidden" name="mb" value={{mb}}>
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">Uredi ime: <span style="color:red">{{validacija.get('Ime')}}</span> </label>
+    </div>
+    <div class="col-75">
+      <input type="text"  name="firstname"  value={{ime}}>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Uredi prezime: <span style="color:red">{{validacija.get('Prezime')}}</span> </label>
+    </div>
+    <div class="col-75">
+      <input type="text"  name="lastname" value={{prezime}}>
+    </div>
+  </div>
+    <div class="row">
+    <div class="col-25">
+      <label for="lname">Uredi razred: <span style="color:red">{{validacija.get('Razred')}}</span> </label>
+    </div>
+    <div class="col-75">
+      <input type="text"  name="razred" value={{razred}}>
+    </div>
+  </div>
+      <div class="row">
+    <div class="col-25">
+      <label for="lname">Uredi odjeljenje: <span style="color:red">{{validacija.get('Odjeljenje')}}</span></label>
+    </div>
+    <div class="col-75">
+      <input type="text"  name="odjeljenje" value={{odjeljenje}}>
+    </div>
+  </div>
+  
+  <div class="row">	
+    <input type="submit" name="action" value="Uredi">
+  </form>
+</div>
+</div>
+  <h3> Ime  i prezime smiju sadrzavati slova sa kvacicama te moraju biti dulji od  jednog slova, <br> razred broj od 1 - 8 <br> odjeljenje slovo a, b, ili c.</h3>
+	
+
+	
+	
+
+
+
+
+</body>
+</html>

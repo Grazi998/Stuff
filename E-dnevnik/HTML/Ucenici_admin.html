@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-2">
+<title>{{get("title")}} </title>
+<style>
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #448ed3;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #45a049;
+}
+
+#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #448ed3;
+  color: white;
+}
+
+.button {
+  background-color: #1c87c9;
+   border: none;
+    color: white;
+         padding: 20px 34px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 20px;
+         margin: 4px 2px;
+         cursor: pointer;
+         }
+</style>
+</head>
+<body>
+
+
+<ul>
+  <li><a href="">E-dnevnik</a></li>
+  <li><a href="/izbornikAdmin/ucenik/add">Dodaj</a></li>
+  <li><a href="/izbornikAdmin">Nazad</a></li>
+  <li> <form action="/izbornikAdmin/ucenik" method="post"><input type="text" name="prezime" placeholder="prezime";> <input type="submit" value="Trazi"></form> </li>
+  <li> </li>
+</ul>
+	<br>
+	<table id="customers">
+	<tr>
+		<th>Maticni broj</th>
+		<th>Ime</th>
+		<th>Prezime</th>
+		<th>Razred</th>
+		<th>Odjeljenje</th>
+		<th>Korisnicko ime</th>
+		<th></th>
+		<th></th>
+	</tr>
+	
+
+	% for mb, ime, prezime , razred, odj, username in ucenici:
+	<tr>
+		<td>{{ mb }}</td>
+		<td>{{ ime }}</td>
+		<td>{{ prezime}}</td>
+		<td>{{ razred}}</td>
+		<td>{{ odj}}</td>
+		<td>{{ username}}</td>
+		
+		<td><a href="ucenik/edit/{{mb}}">Promijeni</a> </td>
+		<td><a href="ucenik/delete/{{mb}}">Izbrisi</a></td>
+	</tr>
+	% end
+</table>
+	
+	
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta  name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>{{get("title")}} </title>
+<style>
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #448ed3;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #45a049;
+}
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #448ed3;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 50%;
+    margin-top: 0;
+  }
+}
+#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #448ed3;
+  color: white; }
+  
+ #customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+
+</style>
+</head>
+<body >
+
+
+
+<ul>
+  <li ><a href="">E-dnevnik</a></li>
+  <li><a href="/izbornikAdmin/predmet">Nazad</a></li>
+  <li> </li>
+</ul>
+<h4> <span style="color:red"> Los unos, procitajte upute </span> </h4>
+
+	<table id="customers">
+	<tr>
+		<th>Maticni broj</th>
+		<th>Naziv</th>
+		<th>Razina</th>
+	</tr>	
+	<tr>
+		<td>{{ mb }}</td>
+		<td>{{ naziv }}</td>
+		<td>{{ razina}}</td>
+		
+	</tr>
+
+</table>
+	<br>
+	<div class="container">
+  <form action="/submit_predmet", method="post">
+  <input type="hidden" name="mb" value={{mb}}>
+  
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">Naziv</label>
+    </div>
+    <div class="col-75">
+	  	    <select type="text" name="naziv" placeholder="Razina...">
+    <option value="Hrvatski">Hrvatski</option>
+    <option value="Engleski">Engleski</option>
+    <option value="Matematika">Matematika</option>
+    <option value="Tjelesni">Tjelesni</option>
+	<option value="Priroda">Priroda</option>
+    <option value="Geografija">Geografija</option>
+    <option value="Povijest">Povijest</option>
+    <option value="Biologija">Biologija</option>
+	 <option value="Informatika">Informatika</option>
+    <option value="Tehnicki">Tehnicki</option>
+    <option value="Fizika">Fizika</option>
+	 <option value="Kemija">Kemija</option>
+  </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Razina</label>
+    </div>
+    <div class="col-75">
+      
+	    <select type="text" name="razina" placeholder="Razina...">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+	<option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+  </select>
+    </div>
+  </div>
+  
+
+  <div class="row">
+    <input type="submit" name="action" value="Dodaj">
+  </div>
+  </form>
+</div>
+  <h3> <span  style="color:red">Naziv slova bez kvacica, te mora biti jedan od ponudjenih:Priroda (1-4)<br> Tjelesni, Hrvatski, Engleski Matematika, za (1-8)= <br> Geografija, Informatika, Povijest, Tehnicki, Biologija (5-8)<br> Fizika, Kemija (7-8). Predmet ne smije ostati isti kao sto je i bio</span></h3>
+	
+
+	
+	
+
+
+
+
+</body>
+</html>

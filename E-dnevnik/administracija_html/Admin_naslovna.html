@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>"Izbornik Administracije</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+		body {
+    		font-family: 'Open Sans', sans-serif;
+    		margin: 0;
+    		overflow: hidden;
+		}
+		#left {
+    		float: left;
+    		position: absolute;
+    		width: 90vw;
+    		height: 120vh;
+    		background:  rgb(255, 173, 79);
+    		border-radius: 0px 600px 600px 0;
+    		margin: -170px 0 0 0;
+    		padding: 180px 0 0 0;
+		}
+		#right {
+    		background-color: rgba(196, 123, 55, 0.801);
+    		height: 100vh;
+		}
+		#right .block:hover{
+			background-color: rgba(65, 40, 18, 0.952);
+            cursor: pointer;
+		}
+		#right .block:active{
+			background-color: black;
+		}
+		#right .block {
+    		width: 100%;
+    		height: 13.4vh;
+    		text-align: right;
+    		color: #FFF;
+    		padding: 31.7px 0;
+		}
+		#right .block i {
+    		font-size: 30px;
+    		padding: 0 20px 0 10px;
+    		line-height: 100%;
+		}
+		#right .block a {
+    		color: #FFF;
+    		text-decoration: none;
+		}
+		#jedan {
+    		background:  rgba(77, 44, 8, 0.842);
+		}
+		#dva {
+    		background:  rgba(139, 67, 0, 0.842);
+		}
+		#tri {
+    		background:  rgba(179, 86, 0, 0.842);
+		}
+		#cetiri {
+    		background:  rgba(206, 99, 0, 0.842);
+		}
+		#pet {
+   		 background:  rgba(248, 120, 0, 0.842);
+		}
+		#slika{
+			width: 100%;
+			height: 100%;
+		}
+
+    </style>
+  </head>
+  <body>
+	<div id="left">
+         <h1>DOBRODOŠLI U E-DNEVNIK</h1>
+		 <h2>Prijavljeni ste kao administrator!</h2>
+		 <img id="thumb" src="http://localhost:5555/static/ico.png">
+    </div>
+    <div id="right">
+        <div id="jedan" class="block">Nastavnici<i class="fa fa-user"></i></div>
+        <div id="dva" class="block">Učenici<i class="fa fa-users"></i></div>
+        <div id="tri" class="block">Predmeti<i class="fa fa-book"></i></div>
+        <div id="cetiri" class="block">Koordinacija<i class="fa fa-cogs"></i></div>
+        <div id="pet" class="block">Odjava<i class="fa fa-sign-out"></i></div>
+    </div>
+
+	<script>
+		// for(var i=0;i<document.getElementsByClassName("block").length;i++){
+      	// 	document.getElementsByClassName("block")[i].addEventListener("click", function(){
+		// 		  alert("OK");
+		// 	  });
+		// }
+		document.getElementById("jedan").addEventListener("click", function(){
+			window.location="http://localhost:5555/izbornikAdmin/nastavnik";
+		});
+		document.getElementById("dva").addEventListener("click", function(){
+			window.location="http://localhost:5555/izbornikAdmin/ucenik";
+		});
+		document.getElementById("tri").addEventListener("click", function(){
+			window.location="http://localhost:5555/izbornikAdmin/predmet";
+		});
+		document.getElementById("cetiri").addEventListener("click", function(){
+			window.location="http://localhost:5555/izbornikAdmin/kordinacija";
+		});
+		document.getElementById("pet").addEventListener("click", function(){
+			window.location="http://localhost:5555/";
+		});
+       
+	</script>
+
+  </body>
+</html>

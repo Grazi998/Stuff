@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-2">
+<title>{{get("title")}} </title>
+<style>
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #448ed3;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #45a049;
+}
+
+#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #448ed3;
+  color: white;
+}
+
+.button {
+  background-color: #1c87c9;
+   border: none;
+    color: white;
+         padding: 20px 34px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 20px;
+         margin: 4px 2px;
+         cursor: pointer;
+         }
+
+		 
+		 input[type=submit] {
+  background-color: #448ed3;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+</style>
+</head>
+<body>
+
+
+<ul>
+  <li><a href="">Razredi</a></li>
+  <li><a href="/izbornikAdmin/kordinacija">Nazad</a></li>
+  <li> </li>
+</ul>
+<br>
+<h3>Popis razreda: </h3>
+
+	<table id="customers">
+	<tr>
+		<th>Maticni broj</th>
+		<th>Razred</th>
+		<th>Odjeljenje</th>
+		<th></th>
+
+	</tr>
+	
+	
+	% for mbr, razina, od, rID in razred:
+	<form action="/razred_uredi" method="post">
+
+	<tr>
+		
+		<td>{{ mbr }}</td>
+		<td>{{ razina }}</td>
+		<td>{{ od}}</td>
+		<td>{{rID}}</td>
+		<td><input type="submit" value="Ažuriraj" name='action'></td>
+			<input type="hidden" value={{razina}} name='razred'>
+			<input type="hidden" value={{rID}} name='razrednikID'>
+			<input type="hidden" value={{mbr}} name='mbr'>
+		
+	</tr>
+	</form>
+	% end
+	
+
+</table>
+
+	
+	
+
+</body>
+</html>

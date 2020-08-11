@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-2">
+<title>{{get("title")}} </title>
+<style>
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #448ed3;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #45a049;
+}
+
+#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #448ed3;
+  color: white;
+}
+
+.button {
+  background-color: #1c87c9;
+   border: none;
+    color: white;
+         padding: 20px 34px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 20px;
+         margin: 4px 2px;
+         cursor: pointer;
+         }
+
+		 
+		 input[type=submit] {
+  background-color: #448ed3;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+</style>
+</head>
+<body>
+
+
+<ul>
+  <li><a href="">Razredi</a></li>
+  <li><a href="/izbornikAdmin/kordinacija">Nazad</a></li>
+  <li> </li>
+</ul>
+
+<h3>Popis predmeta:</h3>
+<br>
+
+	<table id="customers">
+	<tr>
+		<th>Predmet</th>
+		<th>Razina</th>
+		<th>Odjeljenje</th>
+		<th>Natavnik maticni broj</th>
+		<th>Natavnik ime</th>
+		<th>Natavnik prezime</th>
+		<th></th>
+
+	</tr>
+	
+	
+	% for nastavnik_maticni, n_ime, n_prezime, p_naziv,p_razina,r_od, r_mb,pnID in uneseni:
+	<form action="/razred_nastava_ukloni" method="post">
+
+	<tr>
+		
+		<td>{{ p_naziv }}</td>
+		<td>{{ p_razina }}</td>
+		<td>{{r_od}}</td>
+		<td>{{ nastavnik_maticni}}</td>
+		<td>{{n_ime}}</td>
+		<td>{{n_prezime}}</td>
+		<td><input type="submit" value="Ukloni" name='action'></td>
+			<input type="hidden" value={{ razred_maticni }} name='razred'>
+			<input type="hidden" value={{pnID}} name='pn'>		
+	</tr>
+	</form>
+	% end	
+</table>
+
+<h3>Moguci unosi nastave za razred:</h3>
+<br>
+
+	<table id="customers">
+	<tr>
+		<th>Predmet</th>
+		<th>Razina</th>
+		<th>Natavnik maticni broj</th>
+		<th>Natavnik ime</th>
+		<th>Natavnik prezime</th>
+		<th></th>
+
+	</tr>
+	
+	
+	% for pnmb, p_naziv,p_razina,n_prezime,n_ime, n_mb in mogucnosti:
+	<form action="/razred_nastava_add" method="post">
+
+	<tr>
+		
+		<td>{{ p_naziv }}</td>
+		<td>{{ p_razina }}</td>
+		<td>{{ n_mb}}</td>
+		<td>{{n_ime}}</td>
+		<td>{{n_prezime}}</td>
+		<td><input type="submit" value="Dodaj vezu" name='action'></td>
+			<input type="hidden" value={{razred_maticni}} name='razred'>
+			<input type="hidden" value={{pnmb}} name='pn'>		
+	</tr>
+	</form>
+	% end	
+</table>
+
+<h3> Da bi unos bio kompletan potrebno je da  razredi od 1-4 imaju sljedeće predmete: Hrvatski, Matematika ,Engleski, Priroda, Tjelesni.<br>
+Razredi 5 i 6 : Hrvatski, Matematika ,Engleski, Biologij, Tjelesni, Povijest, Geografija. Razredi 7 i 8: Hrvatski, Matematika ,Engleski, Biologij, Tjelesni, Povijest, Geografija, Fizika, Kemija.
+<br> Ako nije moguce unijeti neki od predmeta morate unijeti profesora te povezati ga sa zadanim predmetom.
+
+	
+	
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{get("title")}} </title>
+<style>
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #448ed3;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #448ed3;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+
+<ul>
+  <li><a href="">E-dnevnik</a></li>
+  <li><a href="#news">Dodaj</a></li>
+  <li><a href="/izbornikAdmin">Nazad</a></li>
+  <li> <form action="/izbornikAdmin/ucenik" method="post"><input type="text" name="prezime" placeholder="prezime";> <input type="submit" value="Traži"></form> </li>
+  <li> </li>
+</ul>
+	<br>
+	<table id="customers">
+	<tr>
+		<th>JMBAG</th>
+		<th>Ime</th>
+		<th>Prezime</th>
+		<th></th>
+		<th></th>
+	</tr>
+	
+	<h1> Osobe s trazenim prezimenom : {{p}}</h1>
+	% for jmbag, ime, prezime in ucenici:
+		%if p in prezime:
+		
+	<tr>
+		<td>{{ jmbag }}</td>
+		<td>{{ ime }}</td>
+		<td>{{ prezime}}</td>
+		<td><a href="edit/{{jmbag}}">Promijeni</a></td>
+		<td><a href="delete/{{jmbag}}">Izbriši</a></td>
+	</tr>
+	% end
+
+	% end
+</table>
+	
+	
+
+
+
+
+</body>
+</html>
