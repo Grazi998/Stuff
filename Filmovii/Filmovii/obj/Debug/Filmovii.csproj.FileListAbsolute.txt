@@ -1,0 +1,10 @@
+C:\Users\Graziano\Desktop\Filmovii\Filmovii\bin\Debug\Filmovii.exe.config
+C:\Users\Graziano\Desktop\Filmovii\Filmovii\bin\Debug\Filmovii.exe
+C:\Users\Graziano\Desktop\Filmovii\Filmovii\bin\Debug\Filmovii.pdb
+C:\Users\Graziano\Desktop\Filmovii\Filmovii\obj\Debug\Filmovii.csprojAssemblyReference.cache
+C:\Users\Graziano\Desktop\Filmovii\Filmovii\obj\Debug\Filmovii.Form1.resources
+C:\Users\Graziano\Desktop\Filmovii\Filmovii\obj\Debug\Filmovii.Properties.Resources.resources
+C:\Users\Graziano\Desktop\Filmovii\Filmovii\obj\Debug\Filmovii.csproj.GenerateResource.cache
+C:\Users\Graziano\Desktop\Filmovii\Filmovii\obj\Debug\Filmovii.csproj.CoreCompileInputs.cache
+C:\Users\Graziano\Desktop\Filmovii\Filmovii\obj\Debug\Filmovii.exe
+C:\Users\Graziano\Desktop\Filmovii\Filmovii\obj\Debug\Filmovii.pdb
